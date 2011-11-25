@@ -1,0 +1,340 @@
+html{
+  -webkit-tap-highlight-color: transparent; /* Add vertical scrollbar  Keeps page centered in all browsers regardless of content height */
+  /* Define maximum text display as 100% to document Corrects text displayed oddly after orientation change in handheld browsers */
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+  font-size: 100.1%;/*To prevent bugs in IE and Opera */
+  height: 100%;/*Percentage of body in IE height need to set this value in html*/
+  overflow-x: hidden;/*Hidden horizontal scroll bar*/
+  overflow-y: scroll;/*Ensure that all browsers display the vertical scroll bar*/
+}
+
+body, button, input, select, textarea { 
+  font-family: sans-serif; 
+}
+
+body {
+  background-color: #fff;/*Not all browsers set white as the default background color*/
+  color: #444;/*#444 looks better than black*/
+  font: 0.8125em/1.231 "Helvetica Neue", Arial, Helvetica, sans-serif;/*0.1825em=13px*/
+  height: 100%;
+}
+
+/*============================================================================
+ * Remove text-shadow in selection highlight
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ * You will change the Background-color and font color
+ * Not Supper browers for IE6-8 
+ *============================================================================*/ 
+::-moz-selection { 
+  background: #fe57a1; 
+  color: #fff; 
+  text-shadow: none; 
+}
+::selection { 
+  background: #fe57a1; 
+  color: #fff; 
+  text-shadow: none; 
+}
+
+/*============================================================================
+ *Reset Heading
+ *============================================================================*/
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  font-size: 1em;
+} 
+
+/*============================================================================
+ *Improves readability of pre-formatted text in all browsers
+ *============================================================================*/
+pre {
+  white-space: pre;/*CSS2*/
+  white-space: pre-wrap;/*CSS2.1*/
+  white-space: pre-line;/*CSS3*/
+  word-wrap: break-word;/*IE*/
+}
+
+/**============================================================================
+  *Position subscript and superscript content without affecting line-height
+  *============================================================================*/
+sub, sup { 
+  font-size: 75%; 
+  line-height: 0; 
+  position: relative; 
+  vertical-align: baseline; 
+}
+sup { 
+  top: -0.5em; 
+}
+sub { 
+  bottom: -0.25em; 
+}
+
+/*============================================================================
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ *============================================================================*/
+abbr[title], 
+acronym[title], 
+dfn[title] { 
+	cursor: help; 
+	border-bottom: 1px solid; 
+} 
+
+a abbr,
+a acronym {
+	text-transform: uppercase;
+	font-size: 0.769em;/*font-size:10px;*/
+	letter-spacing: 0.1em;
+}
+/*============================================================================
+ * Addresses style set to 'bolder' in FF3/4, S4/5, Chrome
+ *============================================================================*/ 
+b, 
+strong,
+.bolder { 
+  font-weight: bold; 
+}
+ 
+
+/*============================================================================
+ * Addresses styling not present in S5, Chrome
+ *============================================================================*/ 
+dfn,
+em,
+.italic { 
+  font-style: italic; 
+}
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+/*============================================================================
+ * Compatible with each horizontal line of the browser
+ *============================================================================*/
+hr {
+	background: #ddd;/*Change the horizontal line*/
+	color: #ddd;/*Must be same backgrond-color*/
+	clear:both;/*clear float*/
+	float: none;/*cancel the default for float*/
+	width: 100%;/*define the width*/
+	height: 1px;/*Change the height*/
+	line-height: 1px;/*Clear small height for ie6*/
+	font-size: 0;/*Clear small height for ie6*/
+	border: none 0;/*Cancel default border style*/
+	margin:1em 0;
+}
+
+/*============================================================================
+ * Addresses styling not present in IE6/7/8/9
+ *============================================================================*/ 
+mark {
+  background: #ff0; 
+  color: #000; 
+  font-style: italic; 
+  font-weight: bold; 
+}
+ 
+/*============================================================================
+ *Redeclare monospace font family
+ *============================================================================*/
+pre, code, kbd, samp { 
+  font-family: monospace, monospace; 
+  _font-family: 'courier new', monospace; 
+  font-size: 1em; 
+}
+ 
+/*============================================================================
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ *============================================================================ */ 
+q { 
+  quotes: none; 
+}
+q:before, 
+q:after { 
+  content: ""; 
+  content: none; 
+}
+ 
+small { font-size: 85%; }
+
+address {
+	margin-top: 1.538em;/*20px*/
+	font-style: italic;
+}
+
+del {
+	color: #000;
+}
+
+/*============================================================================
+ * Lists
+ *============================================================================*/
+li { 
+ margin-left: 1.538em;/*font-size:13px;margin-left:20px*/ 
+ list-style-position: outside;
+}
+ul { 
+  list-style-type: disc; 
+}
+ul ul { 
+  list-style-type: square; 
+}
+ul ul ul { 
+  list-style-type: circle; 
+}
+ol { 
+  list-style-type: decimal; 
+}
+ol ol {
+  list-style-type: lower-roman;
+}
+ol ol ol {
+  list-style-type:upper-roman;
+}
+
+li ul,
+li ol {
+	margin: 0 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/*ul and ol don't have any list style*/
+.unstyled {
+	margin-left: 0;
+}
+
+.unstyled li{
+  list-style: none outside none;
+  margin-left: 0;
+}
+
+.unstyled ul,
+.unstyled ol {
+	margin-left: 0;
+}
+
+dl {
+	margin: 0 0 1.5em 0;
+}
+
+dl dt { 
+  font-weight: bold; 
+}
+dl dd {
+  margin-left: 1.538em; /*font-size:13px;margin-left:20px*/ 
+}
+
+/*============================================================================
+ * 1. Improve image quality when scaled in IE7
+ * 2. Remove the gap between images and borders on image containers
+ *============================================================================*/
+img { 
+  -ms-interpolation-mode: bicubic; 
+  vertical-align: middle; 
+}
+
+a img {
+  border: 0 none;  
+}
+/*============================================================================
+ * Correct overflow not hidden in IE9 
+ *============================================================================*/
+svg:not(:root) { 
+  overflow: hidden; 
+}
+/*============================================================================
+ * table
+ *============================================================================*/
+th,td {
+  vertical-align: middle;
+}
+th {
+  text-align: center;
+  font-weight:bold;
+}
+tbody th {
+  text-align: left;
+  font-weight: bold;
+}
+td {
+  text-align: left;
+}
+tfoot { 
+  font-style: italic; 
+}
+
+/* =============================================================================
+ *   Forms
+ * ========================================================================== */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+
+textarea {
+  overflow: auto; 
+  vertical-align: top; 
+  resize: vertical;  
+}
+
+input, select { 
+  cursor: pointer; 
+}
+
+input[type='text'],
+input[type='password'] { 
+  cursor: text; 
+}
+
+/* =============================================================================
+ *   outline define style
+ * ========================================================================== */
+:focus {
+  outline: none 0;
+}
+
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
+a,a:link {
+  color: #0069d6;
+  text-decoration: none;
+  outline: none;
+}
+a:link {
+  -webkit-tap-highlight-color: 
+  #ff5e99;
+}
+a:visited {
+  outline: none;
+}
+a:hover {
+  color:#0050a3;
+  text-decoration: underline;
+}
+
+a:hover,
+a:active {
+  outline: none;
+}
+
+
+
+

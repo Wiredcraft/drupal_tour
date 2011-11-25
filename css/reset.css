@@ -1,0 +1,44 @@
+body,ul,ol,dl,dd,dir,h1,h2,h3,h4,h5,h6,p,pre,blockquote,hr,figure{
+	margin:0;
+	padding:0;
+	font-size: 100%;
+	vertical-align:baseline;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { 
+	display:block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+
+audio:not([controls]) {
+    display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}

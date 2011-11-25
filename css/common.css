@@ -1,0 +1,340 @@
+﻿/*==============================================================
+ * lfloat=>	float left
+ * rfloat=> float right
+ *=============================================================*/
+.fl{
+	float:left;
+	display: inline;
+}
+
+.fr{
+	float:right;
+	display: inline;
+}
+
+/*=================================================================
+ * fss => small font size
+ * fsm => medium font size
+ * fsl => large font size
+ * fsxl => x-large font size 
+ * fsxxl => xx-large font size
+ *=================================================================*/
+.fss{
+	font-size: 0.769em;/*10px*/
+}
+.fsm{
+	font-size: 0.923em;/*12px*/
+}
+.fsl{
+	font-size: 1.077em;/*14px*/
+}
+.fsxl{
+	font-size: 1.308em;/*17px*/
+}
+.fsxxl{
+	font-size: 1.462em;/*19px*/
+}
+/*===============================================================================
+ * clear and clearfix => clear:both
+ * clearLeft => clear:left
+ * clearRiht => clear:rigth
+ *===============================================================================*/
+.clearfix:before, 
+.clearfix:after { 
+  content: ""; 
+  display: table; 
+}
+.clearfix:after { 
+  clear: both; 
+  overflow:hidden;
+}
+.clearfix { 
+  zoom: 1; 
+}
+
+.clear { 
+	clear:both; 
+	display:block; 
+	overflow:hidden; 
+	visibility:hidden; 
+	height:0px;
+	font-size:0;
+	line-height: 0;
+}
+
+.clearLeft { 
+	clear:left; 
+} 
+
+.clearRight { 
+	clear:right; 
+}
+
+/* =============================================================================
+ *   Non-semantic helper classes
+ *  Please define your styles before this section.
+ *  ========================================================================== */
+ 
+/* For image replacement */
+.ir { 
+  display: block; 
+  border: 0; 
+  text-indent: -999em; 
+  overflow: hidden; 
+  background-color: transparent;
+  background-repeat: no-repeat; 
+  text-align: left; 
+  direction: ltr; 
+}
+.ir br { 
+  display: none; 
+}
+ 
+/* Hide for both screenreaders and browsers*/
+.hidden { 
+  display: none !important; 
+  visibility: hidden; 
+}
+
+.block {
+	display: block !important;
+} 
+
+.inline {
+	display: inline !important;
+}
+
+.inlineBlock {
+	display: inline-block !important;
+	*display: inline;
+	*zoom: 1;
+}
+
+/*  Hide only visually, but have it available for screenreaders*/
+.visuallyhidden { 
+  border: 0 none !important;
+  clip: rect(1px 1px 1px 1px);/*IE<8*/
+  clip: rect(1px,1px,1px,1px);
+  height: 1px !important;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px; 
+}
+ 
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+.visuallyhidden.focusable:active, 
+.visuallyhidden.focusable:focus { 
+  clip: auto; 
+  height: auto; 
+  margin: 0; 
+  overflow: visible; 
+  position: static; 
+  width: auto; 
+}
+ 
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { 
+  visibility: hidden; 
+}
+
+/*============================================================
+ *text align helps
+ *a,v,p= align,vertical,position
+ *l,r,c,j => left,right,center,justify
+ *t,m,b,bl, => top,middle,bottom,baseline
+ *r,a,s => relative,absolute,static
+ *============================================================*/
+.ar {
+	text-align:right;
+}
+
+.al {
+	text-align: left;
+}
+
+.ac {
+	text-align: center;
+}
+
+.aj {
+	text-align: justify;
+} 
+
+.vt { 
+	vertical-align: top; 
+}
+
+.vm{ 
+	vertical-align: middle; 
+}
+
+.vb { 
+	vertical-align: bottom;
+}
+
+.vbl {
+	vertical-align:baseline;
+}
+
+.pr { 
+	position: relative; 
+}
+.pa { 
+	position: absolute; 
+}
+.ps {
+	position: static;
+}
+
+/*===============================================================
+ *	IMAGES
+ *  markup
+ *    <p><img class="left" alt="" src="img.jpg"> text </p>
+ *===============================================================*/
+img{
+	max-width:100%;
+	width: 100%;
+	height:auto;
+	/* Give it some text styles to offset alt text */
+	font-style:italic;
+	color:#c00;
+}
+
+img.lfloat{ 
+	margin:0 0.615em 0 0; 
+}
+
+img.rfloat	{ 
+	margin:0 0 0 0.615em; 
+}
+
+/*--- FLASH/VIDEO ---*/
+object,
+embed,
+video{
+	max-width:100%;
+	height:auto;
+}
+
+/*===========================================================================
+ *Spaceing
+ *spacing helpers
+ *p,m = padding,margin
+ *a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+ *xs,s,m,l,xl,xxl,n = x-small(5px),small(10px),medium(15px),large(20px),x-large(25px),xx-large(30px),none(0px)
+ *==========================================================================*/
+
+ /*padding and margin all*/
+.paxs{padding:5px;}
+.pas {padding: 10px;}
+.pam{padding:15px;}
+.pal{padding:20px;}
+.paxl{padding: 25px;}
+.paxxl{padding: 30px;}
+
+.maxs{margin:5px;}
+.mas {margin: 10px;}
+.mam{margin:15px;}
+.mal{margin:20px;}
+.maxl{margin: 25px;}
+.maxxl{margin: 30px;}
+
+/*padding and margin top*/
+.ptxs{padding-top:5px;}
+.pts{padding-top:10px;}
+.ptm{padding-top:15px;}
+.ptl{padding-top:20px;}
+.ptxl{padding-top:25px;}
+.ptxxl{padding-top:30px;}
+
+.mtxs{margin-top:5px;}
+.mts{margin-top:10px;}
+.mtm{margin-top:15px;}
+.mtl{margin-top:20px;}
+.mtxl{margin-top:25px;}
+.mtxxl{margin-top:30px;}
+
+/*padding and margin right*/
+.prxs{padding-right:5px;}
+.prs{padding-right:10px;}
+.prm{padding-right:15px;}
+.prl{padding-right:20px;}
+.prxl{padding-right:25px;}
+.prxxl{padding-right:30px;}
+
+.mrxs{margin-right:5px;}
+.mrs{margin-right:10px;}
+.mrm{margin-right:15px;}
+.mrl{margin-right:20px}
+.mrxl{margin-right:25px;}
+.mrxxl{margin-right:30px;}
+
+/*pdding and margin bottom*/
+.pbxs{padding-bottom:5px;}
+.pbs{padding-bottom:10px;}
+.pbm{padding-bottom:15px;}
+.pbl{padding-bottom:20px;}
+.pbxl{padding-bottom:25px;}
+.pbxxl{padding-bottom:30px;}
+
+.mbxs{margin-bottom:5px;}
+.mbs{margin-bottom:10px;}
+.mbm{margin-bottom:15px;}
+.mbl{margin-bottom:20px;}
+.mbxl{margin-bottom:25px;}
+.mbxxl{margin-bottom:30px;}
+
+/*padding and margin left*/
+.plxs{padding-left:5px;}
+.pls{padding-left:10px;}
+.plm{padding-left:15px;}
+.pll{padding-left:20px;}
+.plxl{padding-left:25px;}
+.plxxl{padding-left:30px;}
+
+.mlxs{margin-left:5px;}
+.mls{margin-left:10px;}
+.mlm{margin-left:15px;}
+.mll{margin-left:20px;}
+.mlxl{margin-left:25px;}
+.mlxxl{margin-left:30px;}
+
+/*padding and margin horizontal*/
+.phxs{padding-left:5px;padding-right:5px;}
+.phs{padding-left:10px;padding-right:10px;}
+.phm{padding-left:15px;padding-right:15px;}
+.phl{padding-left:20px;padding-right:20px;}
+.phxl{padding-left:25px;padding-right:25px;}
+.phxxl{padding-left:30px;padding-right:30px;}
+
+.mhxs{margin-left:5px;margin-right:5px;}
+.mhs{margin-left:10px;margin-right:10px;}
+.mhm{margin-left:15px;margin-right:15px;}
+.mhl{margin-left:20px;margin-right:20px;}
+.mhxl{margin-left:25px;margin-right:25px;}
+.mhxxl{margin-left:30px;margin-right:30px;}
+
+/*padding and margin vertical*/
+.pvxs{padding-top:5px;padding-bottom:5px;}
+.pvs{padding-top:10px;padding-bottom:10px;}
+.pvm{padding-top:15px;padding-bottom:15px;}
+.pvl{padding-top:20px;padding-bottom:20px;}
+.pvxl{padding-top:25px;padding-bottom:25px;}
+.pvxxl{padding-top:30px;padding-bottom:30px;}
+
+.mvxs{margin-top:5px;margin-bottom:5px;}
+.mvs{margin-top:10px;margin-bottom:10px;}
+.mvm{margin-top:15px;margin-bottom:15px;}
+.mvl{margin-top:20px;margin-bottom:20px;}
+.mvxl{margin-top:25px;margin-bottom:25px;}
+.mvxxl{margin-top:30px;margin-bottom:30px;}
+
+/*clear margin and padding*/
+.first{margin-left:0 !important;}
+.last{margin-right:0 !important;}
+.top{margin-top:0 !important;}
+.bottom{margin-bottom:0 !important;}
+
+ 

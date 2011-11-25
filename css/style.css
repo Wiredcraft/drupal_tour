@@ -1,0 +1,235 @@
+@import url(reset.css);
+@import url(base.css);
+@import url(common.css);
+@import url(buttons.css);
+
+/*================================
+ *
+ *Drupal China Main style
+ *
+ *===============================*/
+
+ 
+body {
+  background-color: #E3E6E9;
+  font-family:Tahoma,Arial,Helvetica,"SimSun","Arial Narrow",Geneva,sans-serif;
+  color: #333;
+  min-width: 780px;
+}
+
+header {
+  background-color: #2d3439;
+  background-image: -moz-linear-gradient(90deg, #191e1f, #2d3439);
+  background-image: -ms-linear-gradient(90deg, #191e1f, #2d3439);
+  background-image: -o-linear-gradient(90deg, #191e1f, #2d3439);
+  background-image: -webkit-linear-gradient(90deg, #191e1f, #2d3439);
+  background-image: linear-gradient(90deg, #191e1f, #2d3439);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#191e1f', EndColorStr='#2d3439');
+  color: #fff;
+  height: 90px;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+.container {
+  position: relative;
+  width: 780px;
+  margin: 0 auto;
+}
+#logo {  
+  width: 228px;
+  height:151px;
+  position: absolute;
+  left: 50%;
+  margin-left: -114px;
+  z-index:999;
+}
+
+#logo a {
+  display: block;
+  background: url(../images/icon.png) no-repeat 1px 0;
+  width: 228px;
+  height: 151px;
+  text-indent: -999em;
+}
+
+#content {
+  padding-top: 180px;
+}
+
+nav {
+  float: left;
+  padding: 15px 0 0 0;
+}
+
+nav ul {
+  margin: 0 0 0 -10px;
+  padding: 0;
+}
+
+
+nav li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  list-style: none outside none;
+  margin: 0 20px 0 0;
+}
+
+
+nav a,
+nav a:link,
+#weibo,
+#weibo:link {
+  background: url(../images/icon.png) no-repeat 12px -288px;
+  display: inline-block;
+  padding: 35px 10px 0;
+  color: #040404;
+  font-size: 20px;
+}
+
+nav a.schedule {
+  background-position: 12px -488px;
+}
+
+nav a.contact {
+  background-position: -181px -288px;
+}
+
+nav li.current a, 
+nav a:hover,
+#weibo:hover {
+  background: url(../images/icon.png) no-repeat 12px -188px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li.current a.schedule,
+nav a.schedule:hover {
+  background-position: 12px -388px;
+}
+
+nav li.current a.contact,
+nav a.contact:hover {
+  background-position: -181px -188px;
+}
+
+#weibo {
+  float: right;
+  display: inline;
+  margin: 15px 160px 0 0;
+}
+
+#weibo,
+#weibo:link {
+  background-position: -173px -488px;
+}
+
+#weibo:hover {
+  background-position: -173px -388px;
+}
+
+article {
+  border-bottom: 1px solid #CDD2D7;
+  border-top: 1px solid #fff;
+  padding: 25px 0;
+}
+
+.articleAbout {
+  border-top: 0 none;
+  padding-top: 0;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  color: #CDD2D7;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+article h2 span {
+  display: inline-block;
+  background: url(../images/icon.png) no-repeat -188px -692px;
+  padding-left: 50px;
+}
+
+article #schedule span {
+  background-position: -186px -599px;
+}
+
+article h3 {
+  font-size: 24px;
+  line-height: 1.4em;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cloumn {
+  float: left;
+  display: inline;
+  width: 245px;
+  margin-right: 22px;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.cloumn h4 {
+  margin-bottom: 15px;
+}
+
+.articleSchedule ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.articleSchedule li {
+  margin: 0;
+  float: left;
+  width: 140px;
+  list-style: none outside none;
+}
+
+.articleSchedule li.arrow {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8), 1px 1px 1px rgba(0, 0, 0, 0.8), 1px 1px 1px rgba(0, 0, 0, 0.8);
+  width: 20px;
+}
+
+.articleSchedule li span {
+  display: block;
+  font-size: 50px;
+  line-height: 1.4em;
+}
+
+.articleSchedule li span.order {
+  font-size: 18px;
+  width: 37px;
+  height: 37px;
+  background-color: #000;
+  color: #fff;
+  -moz-border-radius: 29px;
+  -webkit-border-radius: 29px;
+  border-radius: 29px;
+  line-height: 37px;
+  margin: 0 auto;
+}
+
+.articleSchedule li span.date {
+  font-size: 12px;
+}
+
+.articleSchedule li.active span{
+  color: #DE2910 ;
+}
+.articleSchedule li.active span.order {
+  background-color:#DE2910 ;
+  color: #fff;
+}
