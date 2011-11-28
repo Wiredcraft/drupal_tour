@@ -145,14 +145,22 @@ article {
 }
 
 article h2 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: bold;
-  color: #CDD2D7;
   margin-bottom: 50px;
-  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  height: 42px;
+  text-indent: -999em;  
 }
 
+.articleAbout h2 {
+  background: url(../images/bg-about.png) no-repeat center;
+}
+
+.articleSchedule h2 {
+  background: url(../images/bg-schedule.png) no-repeat center;
+}
+
+.articleContact h2 {
+  background: url(../images/bg-contact.png) no-repeat center;
+}
 article h2 span {
   display: inline-block;
   background: url(../images/icon.png) no-repeat -188px -692px;

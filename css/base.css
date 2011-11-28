@@ -28,13 +28,13 @@ body {
  * Not Supper browers for IE6-8 
  *============================================================================*/ 
 ::-moz-selection { 
-  background: #fe57a1; 
-  color: #fff; 
+  background: #CDD2D7; 
+  color: #CD301A; 
   text-shadow: none; 
 }
 ::selection { 
-  background: #fe57a1; 
-  color: #fff; 
+  background: #CDD2D7; 
+  color: #CD301A; 
   text-shadow: none; 
 }
 
