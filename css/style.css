@@ -131,15 +131,10 @@ nav a.contact:hover {
 }
 
 article {
-  border-bottom: 1px solid #CDD2D7;
-  border-top: 1px solid #fff;
-  padding: 25px 0;
+  padding:180px 0 0;
 }
 
-.articleAbout {
-  border-top: 0 none;
-  padding-top: 0;
-}
+
 
 article h2 {
   margin-bottom: 50px;
@@ -160,7 +155,7 @@ article h2 {
 }
 
 .articleAbout {
-  padding-top: 180px;
+  
 }
 
 article #schedule span {
@@ -236,11 +231,4 @@ article h3 {
 .articleSchedule li.active span.order {
   background-color:#DE2910 ;
   color: #fff;
-}
-#overlay {
-  background: #E3E6E9;
-  height: 180px;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
 }
