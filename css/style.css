@@ -57,9 +57,6 @@ header {
   text-indent: -999em;
 }
 
-#content {
-  padding-top: 180px;
-}
 
 nav {
   float: left;
@@ -161,10 +158,9 @@ article h2 {
 .articleContact h2 {
   background: url(../images/bg-contact.png) no-repeat center;
 }
-article h2 span {
-  display: inline-block;
-  background: url(../images/icon.png) no-repeat -188px -692px;
-  padding-left: 50px;
+
+.articleAbout {
+  padding-top: 180px;
 }
 
 article #schedule span {
@@ -240,4 +236,11 @@ article h3 {
 .articleSchedule li.active span.order {
   background-color:#DE2910 ;
   color: #fff;
+}
+#overlay {
+  background: #E3E6E9;
+  height: 180px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
 }
