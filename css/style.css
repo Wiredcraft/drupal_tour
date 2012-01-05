@@ -87,9 +87,6 @@ article > header h2 {
   display: block;
   margin-bottom: 5px;
 }
-.schedule ul li .date {
-  font-size: 18px;
-}
 .schedule ul li .city {
   font-size: 22px;
 }
