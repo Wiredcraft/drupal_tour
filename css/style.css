@@ -13,6 +13,12 @@ body {
   font-family:Tahoma,Arial,Helvetica,"SimSun","Arial Narrow",Geneva,sans-serif;
   color: #333;
   min-width: 780px;
+  line-height: 160%;
+  font-size: 16px;
+}
+
+a, a:link, a:hover {
+  color: #0072B9;
 }
 
 body > header {
@@ -53,15 +59,55 @@ article > header h2 {
   text-indent: -999em;
   margin-bottom: 20px;
 }
-.time > header h2 {
+.schedule > header h2 {
   background-image: url("../images/time.png");
 }
-article > section {
-  margin-bottom: 35px;
+.pitch {
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
 }
+.schedule ul {
+  float: left;
+  margin: 0 0 15px 0;
+}
+.schedule ul li {
+  float: left;
+  display: block;
+  margin: 0 15px 15px 0;
+  text-align: center;
+  width: 130px;
+}
+.schedule ul li.last {
+  margin: 0;
+}
+.schedule ul li .date,
+.schedule ul li .city,
+.schedule ul li .link {
+  display: block;
+  margin-bottom: 5px;
+}
+.schedule ul li .date {
+  font-size: 18px;
+}
+.schedule ul li .city {
+  font-size: 22px;
+}
+.schedule ul li .link {
+  color: #aaa;
+}
+
+article {
+  clear: both;
+}
+article > section p {
+  margin-bottom: 15px;
+}
+
 footer {
   clear: both;
   color: #AAA;
+  font-size: 14px;
   padding: 20px;
 }
 footer a,
