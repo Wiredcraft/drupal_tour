@@ -34,6 +34,15 @@ header .container {
   height: 257px;
   text-indent: -999em;
 }
+header a {
+  background: url("../images/weibo.png") no-repeat center;
+  height: 146px;
+  width: 145px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -999em;
+}
 
 article > header {
   margin-bottom: 30px;
