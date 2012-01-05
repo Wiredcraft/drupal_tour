@@ -25,7 +25,6 @@ body > section {
   padding: 35px 0;
 }
 .container {
-   position: relative;
    width: 565px;
    margin: 0 auto;
  } 
@@ -39,7 +38,7 @@ header a {
   height: 146px;
   width: 145px;
   position: absolute;
-  top: 0;
+  top: -8px;
   right: 0;
   text-indent: -999em;
 }
