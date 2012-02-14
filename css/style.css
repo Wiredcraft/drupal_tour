@@ -64,6 +64,7 @@ article > header h2 {
 }
 .event > header h2 {
   background-image: url("../images/line.png");
+    height: 10px;
 }
 .pitch {
   font-size: 24px;
